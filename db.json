@@ -102,6 +102,66 @@
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
       "role": "admin",
       "id": 2
+    },
+    {
+      "email": "mesero@hola.com",
+      "password": "$2a$10$WltxZfi07S8VN4QXfWWTEelwjmc/duJw2KR1fC2SFyG4nBek1GV3S",
+      "role": "waiter",
+      "id": 3
+    },
+    {
+      "email": "cheff@hola.com",
+      "password": "$2a$10$WLa1PIA4rRQ/8uwm5qyYD.8pGzM.DWvUwo/PRv/lSAcK4WFKX.ZHu",
+      "role": "cheff",
+      "id": 4
+    },
+    {
+      "email": "adm@hola.com",
+      "password": "$2a$10$L3sm.TeWQmq93PEzY6qVg..whJMwP1hSNXE2OG94d6DsVfxJXHsS6",
+      "role": "cheff",
+      "id": 5
+    },
+    {
+      "email": "admin@hola.com",
+      "password": "$2a$10$xIZ.zPM.xkEbJ8No.iMUo.tkJZ9/1IIfLs8AOcuRaPNbOsjyVDxaS",
+      "role": "admin",
+      "id": 6
+    },
+    {
+      "email": "waiter@hello.com",
+      "password": "$2a$10$xTEnlrHyKadXce6xxemaWO8u5FQRYuw9oqQIZnZt8B3gYkPtT1dgy",
+      "role": "waiter",
+      "id": 7
+    },
+    {
+      "email": "admin@hello.com",
+      "password": "$2a$10$K83eAN1qehulklk5li9UOeoLdHyII.GrsWZ90fOU9qg4YyGWt3B9W",
+      "role": "admin",
+      "id": 8
+    },
+    {
+      "email": "cheff@hello.com",
+      "password": "$2a$10$HlqDe5yODura6hyjuq.J9.ZXqpiZR16yqJJSptH/0sXMqXIsTsn7u",
+      "role": "cheff",
+      "id": 9
+    },
+    {
+      "email": "chef@bbq.com",
+      "password": "$2a$10$HE.Ro2LmFsl/ZRU0rJrESuIShSdCImmI5mMemFWILFbCO8ZargERG",
+      "role": "chef",
+      "id": 10
+    },
+    {
+      "email": "admin@bbq.com",
+      "password": "$2a$10$JkkC9I6/wF2EYrDy9FnRS.VW3QJvUTmJBPYZ9nR6zixvv3B1clfrm",
+      "role": "admin",
+      "id": 11
+    },
+    {
+      "email": "waiter@bbq.com",
+      "password": "$2a$10$Ozz4lul.XnbRD7RkM29quOaB9ya3O6oNWM36WevWKc479ZDwznLK6",
+      "role": "waiter",
+      "id": 12
     }
   ]
 }
