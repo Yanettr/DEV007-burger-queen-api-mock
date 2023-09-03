@@ -88,6 +88,62 @@
       "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/water.png",
       "type": "Almuerzo",
       "dateEntry": "2022-03-05 15:14:10"
+    },
+    {
+      "name": "Jugos de fruta natural",
+      "price": 700,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/4.png",
+      "type": "Desayuno",
+      "id": 8
+    },
+    {
+      "name": "Café con leche",
+      "price": 700,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/2.png",
+      "type": "Desayuno",
+      "id": 9
+    },
+    {
+      "name": "Hamburguesa doble",
+      "price": 1500,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/2.png",
+      "type": "Almuerzo",
+      "id": 10
+    },
+    {
+      "name": "Hamburguesa simple",
+      "price": 1000,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/1.png",
+      "type": "Almuerzo",
+      "id": 11
+    },
+    {
+      "name": "Aros de cebolla",
+      "price": 500,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/4.png",
+      "type": "Almuerzo",
+      "id": 12
+    },
+    {
+      "name": "Gaseosa 500 ml",
+      "price": 700,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/7.png",
+      "type": "Almuerzo",
+      "id": 13
+    },
+    {
+      "name": "Gaseosa 750 ml",
+      "price": 1000,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/7.png",
+      "type": "Almuerzo",
+      "id": 14
+    },
+    {
+      "name": "Papas fritas",
+      "price": 500,
+      "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/3.png",
+      "type": "Almuerzo",
+      "id": 15
     }
   ],
   "users": [
@@ -162,6 +218,24 @@
       "password": "$2a$10$Ozz4lul.XnbRD7RkM29quOaB9ya3O6oNWM36WevWKc479ZDwznLK6",
       "role": "waiter",
       "id": 12
+    },
+    {
+      "email": "chef@bq.com",
+      "password": "$2a$10$wyM4I2wzxWYpIK3pFwOxteIKaYY7U7dhKqqRT1VttVle56UGbIUFi",
+      "role": "chef",
+      "id": 13
+    },
+    {
+      "email": "admin@bq.com",
+      "password": "$2a$10$MHoURyqEFa9xOTKLGk/9Z.jWAlW1d/tHREq9yb6UPOYZ6WDXAMi/2",
+      "role": "admin",
+      "id": 14
+    },
+    {
+      "email": "waiter@bq.com",
+      "password": "$2a$10$HBOjKwfIhZsfEOSyDNTvi.xsTZN61eeZqsAX5CLXI74e0.TiOCYzS",
+      "role": "waiter",
+      "id": 15
     }
   ]
 }

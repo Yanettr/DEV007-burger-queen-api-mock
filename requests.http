@@ -6,28 +6,188 @@ content-type: application/json
     "password": "123456"
 }
 
+
+GET http://localhost:8080/users HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzY3ODMwNSwiZXhwIjoxNjkzNjgxOTA1LCJzdWIiOiIyIn0.OyIjdjkB5XZBv0KCxlSzdT1x_ggVoU0CJc1CKlIA50g
+
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzY3ODk4NSwiZXhwIjoxNjkzNjgyNTg1LCJzdWIiOiIyIn0.8_98SULCoT8u7HaAnmXMX37U_kvvYsggH26krxHOPck
+
+{
+    "email": "admin@bq.com",
+    "password": "123456",
+    "role": "admin"
+}
+
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzY3OTA2MiwiZXhwIjoxNjkzNjgyNjYyLCJzdWIiOiIyIn0.X-V2eolxpQNFkr37jWRW6bkaAdB-xYKRIbbRmqPxYgo
+
+{    "email": "waiter@bq.com",
+    "password": "123456",
+    "role": "waiter"
+}
+
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzY3ODMwNSwiZXhwIjoxNjkzNjgxOTA1LCJzdWIiOiIyIn0.OyIjdjkB5XZBv0KCxlSzdT1x_ggVoU0CJc1CKlIA50g
+
+{
+    "email": "chef@bq.com",
+    "password": "123456",
+    "role": "chef"
+}
+
+
 POST http://localhost:8080/users HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
 
 {
-    "email": "cheff@hello.com",
+    "email": "owner@bq.com",
     "password": "123456",
-    "role": "chef"
+    "role": "owner"
 
 }
 
-GET http://localhost:8080/users HTTP/1.1
-content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
-
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNDM1NCwiZXhwIjoxNjkzNzI3OTU0LCJzdWIiOiIyIn0.gM3vpn12mtZ3l31WAP0Z4moDXvYfkQ-TTkannKvijFw
+
+
+DELETE http://localhost:8080/products/4 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNDU0MCwiZXhwIjoxNjkzNzI4MTQwLCJzdWIiOiIyIn0.DV8D2fq8XxWbOUx68in9iFOPBI6QJinNVn3LOPwdthg
+
+{
+  "id": 4,
+  "name": "Sandwich de jamón y queso",
+  "price": 1000,
+  "image": "https://github.com/Yanettr/DEV007-burger-queen-api-mock/blob/main/resources/images/sandwich.png",
+  "type": "Desayuno"
+}
+
+DELETE http://localhost:8080/products/7 HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNTA5OCwiZXhwIjoxNjkzNzI4Njk4LCJzdWIiOiIyIn0.v8c3MX9ZFiYQHR7DMSi5cX4hJAIMn3Qo-AmYgY9s8cE
+
+{  
+    "id": 7,
+    "name": "Jugos de fruta natural",
+    "price": 700,
+    "image": "https://github.com/Yanettr/DEV007-burger-queen-api-client/blob/waiter/src/assets/breakfast/4.png",
+    "type": "Desayuno"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcxODA3NiwiZXhwIjoxNjkzNzIxNjc2LCJzdWIiOiIyIn0.iYWAn-_O0tvyeh20CQkSxaEXuwpIID20P6HS442at6M
+
+{    "name": "Jugos de fruta natural",
+    "price": 700,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/4.png",
+    "type": "Desayuno",
+    "id": 7
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNjgzMSwiZXhwIjoxNjkzNzMwNDMxLCJzdWIiOiIyIn0.JwwZ3_ssmEgPJ185EOvr_zSqFRd8bw-1vKpXERAG7EQ
+
+{
+    "name": "Café con leche",
+    "price": 700,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/2.png",
+    "type": "Desayuno"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNjgzMSwiZXhwIjoxNjkzNzMwNDMxLCJzdWIiOiIyIn0.JwwZ3_ssmEgPJ185EOvr_zSqFRd8bw-1vKpXERAG7EQ
+
+{
+    "name": "Hamburguesa doble",
+    "price": 1500,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/2.png",
+    "type": "Almuerzo"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNjgzMSwiZXhwIjoxNjkzNzMwNDMxLCJzdWIiOiIyIn0.JwwZ3_ssmEgPJ185EOvr_zSqFRd8bw-1vKpXERAG7EQ
+
+{
+    "name": "Hamburguesa simple",
+    "price": 1000,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/1.png",
+    "type": "Almuerzo"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNjgzMSwiZXhwIjoxNjkzNzMwNDMxLCJzdWIiOiIyIn0.JwwZ3_ssmEgPJ185EOvr_zSqFRd8bw-1vKpXERAG7EQ
+
+{
+    "name": "Aros de cebolla",
+    "price": 500,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/4.png",
+    "type": "Almuerzo"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY4Nzg4MDA0NCwiZXhwIjoxNjg3ODgzNjQ0LCJzdWIiOiIyIn0.lnU386EYfHPWm0wuopsZRbZDR-gTTAGy9E0V0PRSzPU
+
+{
+    "name": "Gaseosa 750 ml",
+    "price": 1000,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/7.png",
+    "type": "Almuerzo"
+}
+
+
+POST http://localhost:8080/products HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNzE1MSwiZXhwIjoxNjkzNzMwNzUxLCJzdWIiOiIyIn0.r53uzi-bPoVF_g2X0_lvSXyFgsN6Tr3uFFasi7USggA
+
+{
+    "name": "Gaseosa 500 ml",
+    "price": 700,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/7.png",
+    "type": "Almuerzo"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyNzY1MywiZXhwIjoxNjkzNzMxMjUzLCJzdWIiOiIyIn0.BwT1fwKI8rn9MpJVh5juxul1vWt00euvn7avVI-n3UU
+
+{
+    "name": "Papas fritas",
+    "price": 500,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/3.png",
+    "type": "Almuerzo"
+}
+
+POST http://localhost:8080/products HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MzcyMDUwNSwiZXhwIjoxNjkzNzI0MTA1LCJzdWIiOiIyIn0.IGkwRkfZ78tBM6wQnW1iSjurWviiiGBwSQV043hutyY
+
+{
+    "name": "Papas fritas",
+    "price": 500,
+    "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/3.png",
+    "type": "Almuerzo"
+}
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+
+
+
+
 
 PATCH http://localhost:8080/orders/2 HTTP/1.1
 content-type: application/json
