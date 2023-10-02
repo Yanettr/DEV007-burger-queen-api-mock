@@ -932,7 +932,7 @@
           }
         }
       ],
-      "status": "delivery",
+      "status": "delivered",
       "dateEntry": "2023-09-08T02:48:46.984Z",
       "id": 26,
       "dateExit": "2023-09-10T23:00:06.206Z"
@@ -1011,7 +1011,7 @@
           }
         }
       ],
-      "status": "delivery",
+      "status": "delivered",
       "dateEntry": "2023-09-08T02:57:32.058Z",
       "id": 29,
       "dateExit": "2023-09-08T19:03:27.787Z"
@@ -1149,7 +1149,7 @@
           }
         }
       ],
-      "status": "delivery",
+      "status": "delivered",
       "dateEntry": "2023-09-09T02:40:46.015Z",
       "id": 33,
       "dateExit": "2023-09-10T23:00:07.027Z"
@@ -1277,6 +1277,64 @@
       "status": "pending",
       "dateEntry": "2023-09-12T04:10:22.448Z",
       "id": 37
+    },
+    {
+      "client": "vvvvv",
+      "tableNumber": "3",
+      "products": [
+        {
+          "qty": 1,
+          "product": {
+            "id": 9,
+            "name": "Café con leche",
+            "price": 700,
+            "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/2.png",
+            "type": "Desayuno"
+          }
+        },
+        {
+          "qty": 1,
+          "product": {
+            "id": 10,
+            "name": "Hamburguesa doble",
+            "price": 1500,
+            "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/2.png",
+            "type": "Almuerzo"
+          }
+        },
+        {
+          "qty": 1,
+          "product": {
+            "id": 11,
+            "name": "Hamburguesa simple",
+            "price": 1000,
+            "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/lunch/1.png",
+            "type": "Almuerzo"
+          }
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "2023-09-12T14:26:25.027Z",
+      "id": 38
+    },
+    {
+      "client": "ggggg",
+      "tableNumber": "5",
+      "products": [
+        {
+          "qty": 1,
+          "product": {
+            "id": 9,
+            "name": "Café con leche",
+            "price": 700,
+            "image": "https://raw.githubusercontent.com/Yanettr/DEV007-burger-queen-api-client/waiter/src/assets/breakfast/2.png",
+            "type": "Desayuno"
+          }
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "2023-09-12T14:27:06.961Z",
+      "id": 39
     }
   ],
   "products": [
